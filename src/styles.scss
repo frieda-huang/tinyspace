@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80px 25% 1fr 25%;
+}
+
+@mixin theme($theme: #F7F7FA) {
+    background-color: $theme;
+    height: 100%;
+    border-right: solid 1px #d3d2d4;
+}
